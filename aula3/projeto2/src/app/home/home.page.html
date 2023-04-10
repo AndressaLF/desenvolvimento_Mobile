@@ -1,0 +1,33 @@
+<ion-header [translucent]="true" class="ion-text-center">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Qual é o melhor combustível?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Preço do Alcool" type="number" labelPlacement ="floating" #alcool></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Preço da Gasolina" type="number" labelPlacement ="floating" #gasolina></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="calcular(gasolina,alcool)" shape="round" class="ion-text-center" color="dark">Calcular</ion-button>
+    <p><strong>O melhor combustível é:</strong></p>
+    <ion-label class="ion-text-start" [color]="cor">{{resultado}}</ion-label>
+
+  </div>
+</ion-content>
+
+<ion-footer [translucent]="false">
+  <ion-toolbar class="ion-text-center" color="dark">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

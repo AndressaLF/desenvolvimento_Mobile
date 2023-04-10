@@ -1,0 +1,62 @@
+Des.Móvel-TSI5
+2023.1
+Detalhes da atividade
+<!DOCTYPE html>
+<html lang="en" class="ios">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRN</title>
+    <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" rel="stylesheet">
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary" class="ion-text-center">
+                <ion-icon slot="start" name="'school"></ion-icon>
+                <ion-title>
+                    IFRN Parnamirim
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-item lines="none" onclick="esconder()">
+                <ion-toggle  id="btn"  checked>
+                    Notícia: Campus Parnamirim
+                </ion-toggle>
+            </ion-item>
+            <ion-card id="card">
+                <img alt="Foto do IFRN" src=".\imagem.jpg" width="100%"/>
+
+                <ion-card-header>
+                    <ion-card-title>Campus Parnamirim:</ion-card-title>
+                    <ion-card-subtitle>Trampolim para o desenvolvimento</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                    Em 27 de dezembro de 2010, o então presidente Lula, ao lado do ministro da Educação, Fernando
+                    Haddad, inaugurou 31 novos campi da Rede Federal de Educação Profissional e Tecnológica. Entre eles,
+                    dois no Rio Grande do Norte, um na cidade de Parnamirim e outro em Nova Cruz.
+                </ion-card-content>
+            </ion-card>
+        </ion-content>
+
+        <ion-footer>
+            <ion-toolbar color="medium" class="ion-text-center">
+                <iont-title>
+                    TSI-5 :: IF-PAR
+                </iont-title>
+            </ion-toolbar>
+        </ion-footer>
+    </ion-app>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <script src=".\ifpar.js"></script>
+</body>
+
+</html>
