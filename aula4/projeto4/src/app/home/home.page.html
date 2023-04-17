@@ -1,0 +1,66 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar color="dark">
+    <ion-title class="ion-text-center">
+      Calculadora Simples
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+    <ion-item class="ion-text-center">
+      <ion-input lines="none" label-placement="floating" type="text" class="display"
+        placeholder="Digite o valor" class="ion-margin" [value]="expressao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="ion-text-center" placeholder="Resultado">
+        {{resultado}}
+      </ion-label>
+    </ion-item>
+
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-button color="dark" shape="round" (click)="addlimpar()">AC</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="abrirPar()">(</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="fecharPar()">)</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addDiv()">/</ion-button></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col><ion-button color="dark" shape="round" (click)="addSete()">7</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addOito()">8</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addNove()">9</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addMult()">x</ion-button></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col><ion-button color="dark" shape="round" (click)="addQuatro()">4</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addCinco()">5</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addSeis()">6</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addSub()">-</ion-button></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col><ion-button color="dark" shape="round" (click)="addUm()">1</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addDois()">2</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addTres()">3</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addSoma()">+</ion-button></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col><ion-button color="dark" shape="round" (click)="addZero()">0</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addPonto()">.</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addApagar()">BCK</ion-button></ion-col>
+        <ion-col><ion-button color="dark" shape="round" (click)="addIgual()">=</ion-button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar  color="dark">
+    <ion-title>  </ion-title>
+  </ion-toolbar>
+</ion-footer>
