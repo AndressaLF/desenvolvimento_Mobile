@@ -1,0 +1,47 @@
+<ion-header [translucent]="true" class="ion-text-center">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Qual é o melhor combustível?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <form [formGroup]="formGroup">
+
+      <ion-input class="ion-margin" label-placement="stacked" clear-input="true" label="Preço da Gasolina"
+        placeholder="Digite o preço da gasolina" type="number" labelPlacement="floating" formControlName="gasolina"></ion-input>
+
+      <ion-input class="ion-margin" label-placement="stacked" clear-input="true" label="Preço do Alcool"
+        placeholder="Digite o preço do alcool" type="number" labelPlacement="floating" formControlName="alcool"></ion-input>
+
+      <ion-button class="ion-margin" (click)="calcular()" [disabled]="formGroup.invalid" shape="round" class="ion-text-center"
+        color="dark">Calcular
+      </ion-button>
+    </form>
+
+    <div [hidden]="calculado==0">
+      <ion-item lines="none" [color]="cor" class="ion-margin">
+        <ion-label class="ion-text-center">
+          Resultado: {{calculado.toFixed(2)}}
+        </ion-label>
+      </ion-item>
+    </div>
+
+    <ion-item lines="none" [color]="cor" class="ion-margin">
+      <ion-label class="ion-text-center">
+        O melhor combustível é: {{mensagem}}
+      </ion-label>
+    </ion-item>
+
+  </div>
+</ion-content>
+
+
+<ion-footer collapse="fade">
+  <ion-toolbar color="dark">
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-footer>

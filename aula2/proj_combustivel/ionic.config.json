@@ -1,0 +1,7 @@
+{
+  "name": "proj_combustivel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
