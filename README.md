@@ -1,6 +1,6 @@
 # Overview
 
-Caso você ainda não tenha o **Node.js**, o**Angular CLI** e o **Ionic** instalado no computador, siga os passos abaixo:
+Caso você ainda não tenha o **Node.js**, o **Angular CLI** e o **Ionic** instalado no computador, siga os passos abaixo:
 
 - Instale o Node.js no seu computador
 Pode baixar o instalador a partir do site oficial: https://nodejs.org/en/
