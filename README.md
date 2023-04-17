@@ -24,7 +24,7 @@ Abra um terminal ou prompt de comando e instale o Ionic, executando o seguinte c
 
 - Para rodar o aplicativo: `ionic serve`
 
-## Editando o projeto clonado do GitGub
+## Editando o projeto clonado do GitHub
 
 Geralmente quando enviamos o projeto para o GitHub a pasta *Node Modules* não é incluida.
 
