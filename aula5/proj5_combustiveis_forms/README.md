@@ -1,6 +1,6 @@
 # Overview
 
-Nessa aula o app da calculadora foi reconstruído usando o *FormGroup*.
+Nessa aula o app que calcular o preço dos combustíveis foi reescrito utilizando o recurso do *FormGroup*.
 
 ## *FormGroup*
 
