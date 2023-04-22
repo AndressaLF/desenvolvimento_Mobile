@@ -22,13 +22,13 @@ O objetivo desse projeto é criar um app para **Controle de despesas** com o lay
 
 ### Passo a passo:
 - Arquivo `tab1.page.html`
-    1. Desenvolver o layout por meio da utilização dos componentes Ionic;
-    2. Adicionar a tag *forms*;
-    3. Criar e adicionar nome do elemento e função dos botões (name="add" (click)="adicionar()");
+1. Desenvolver o layout por meio da utilização dos componentes Ionic;
+2. Adicionar a tag *forms*;
+3. Criar e adicionar nome do elemento e função dos botões (name="add" (click)="adicionar()");
 
 - Arquivo `tab1.page.ts`
-    1. Criar e adicionar as funções (adicionar(){}), após o *construtor*;
-    2. Importar os componentes para trabalhar com o formulário: 
+1. Criar e adicionar as funções (adicionar(){}), após o *construtor*;
+2. Importar os componentes para trabalhar com o formulário: 
 ```typescript
     import  {ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 ```
@@ -45,11 +45,13 @@ O objetivo desse projeto é criar um app para **Controle de despesas** com o lay
 ```
 
 - Arquivo `tab1.page.html`
-    1. Adicionar ao formulário o atributo `[FormGroup]` ligando esse atributo ao nome da variável passada no arquivo .ts: `[formGroup]="fg"`
-    2. Criar os campos de entrada. Cada campo é associado a um ***FormControlName***, que é o nome da propriedade do **FormGroup** que representa o valor do campo.
+1. Adicionar ao formulário o atributo `[FormGroup]` ligando esse atributo ao nome da variável passada no arquivo .ts: `[formGroup]="fg"`
+
+2. Criar os campos de entrada. Cada campo é associado a um ***FormControlName***, que é o nome da propriedade do **FormGroup** que representa o valor do campo.
 
 
 - Arquivo `tab1.page.ts`
+
 1. Definindo os campos do formulário e as validações necessárias para cada campo:
 ```typescript
 constructor( 
