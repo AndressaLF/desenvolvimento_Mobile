@@ -1,0 +1,7 @@
+{
+  "name": "proj_gastos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
