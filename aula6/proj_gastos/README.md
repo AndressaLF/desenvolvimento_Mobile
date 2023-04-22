@@ -32,25 +32,25 @@ O objetivo desse projeto é criar um app para **Controle de despesas** com o lay
 ```typescript
     import  {ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 ```
-    3. Criar um objeto FormGroup no seu componente:
-
+3. Criar um objeto FormGroup no seu componente:
 ```typescript
     fg: FormGroup;
 ```
-    4. Inicializando o objeto FormGroup usando o **FormBuilder**:
 
+4. Inicializando o objeto FormGroup usando o **FormBuilder**:
 ```typescript
     constructor(private fb: FormBuilder) {
     this.fg = this.fb.group({ });
 }
 ```
+
 - Arquivo `tab1.page.html`
     1. Adicionar ao formulário o atributo `[FormGroup]` ligando esse atributo ao nome da variável passada no arquivo .ts: `[formGroup]="fg"`
     2. Criar os campos de entrada. Cada campo é associado a um ***FormControlName***, que é o nome da propriedade do **FormGroup** que representa o valor do campo.
 
-- Arquivo `tab1.page.ts`
-    1. Definindo os campos do formulário e as validações necessárias para cada campo:
 
+- Arquivo `tab1.page.ts`
+1. Definindo os campos do formulário e as validações necessárias para cada campo:
 ```typescript
 constructor( 
     private fb: FormBuilder) {
@@ -62,7 +62,8 @@ constructor(
     });
 }
 ```
-    2. Use o objeto **FormGroup** para acessar e manipular os dados do formulário.
+
+2. Use o objeto **FormGroup** para acessar e manipular os dados do formulário.
 ```typescript
 {
  console.log(this.fg.value);
