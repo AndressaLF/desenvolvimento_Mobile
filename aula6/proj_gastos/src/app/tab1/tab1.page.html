@@ -16,16 +16,19 @@
       </ion-item>
 
       <ion-item>
-        <ion-input clear-input="true" label="Calor" type="number" labelPlacement="floating"
+        <ion-input clear-input="true" label="Valor" type="number" labelPlacement="floating"
           formControlName="valor"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-select label="Tipo" aria-label="tipos" placeholder="Outra" formControlName="tipo">
-          <ion-select-option value="apples">Apples</ion-select-option>
-          <ion-select-option value="oranges">Oranges</ion-select-option>
-          <ion-select-option value="bananas">Bananas</ion-select-option>
+          <ion-select-option *ngFor="let tipo of tipoDespesa" [value]="tipo">{{tipo}}</ion-select-option>
         </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-input clear-input="true" label="Local" type="text" labelPlacement="floating"
+          formControlName="local"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -39,6 +42,7 @@
         </ion-datetime>
       </ion-item>
     </ion-list>
+
   </form>
 
   <ion-fab vertical="bottom" horizontal="start" slot="fixed">
@@ -59,4 +63,8 @@
     </ion-fab-button>
   </ion-fab>
 
+  <ion-item class="ion-text-center">
+    <ion-label lines="none" [color]="corMensagem">{{ mensagem }}</ion-label>
+  </ion-item>
 </ion-content>
+
