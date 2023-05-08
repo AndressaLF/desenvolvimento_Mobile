@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-title>
+      Prova 01
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    
+    <ion-card *ngFor="let filme of filmes">
+      <ion-img [src]="filme.cartaz" style="width: 40%; height: 20%;"></ion-img>
+      <ion-card-header>
+        <ion-card-title>{{ filme.titulo }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p><strong>Gênero:</strong> {{ filme.genero }}</p>
+        <p><strong>Diretor:</strong> {{ filme.diretor }}</p>
+        <p><strong>Ano:</strong> {{ filme.ano }}</p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-footer>
+
